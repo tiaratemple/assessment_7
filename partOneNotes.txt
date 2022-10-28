@@ -1,0 +1,25 @@
+1. Results for the extraLargeArray
+  insert 697.3555 ms
+  append 3.275417 ms
+
+2. Results for the tinyArray
+  insert 16.417 μs
+  append 51.667 μs
+
+3. Results for the smallArray
+  insert 20.667 μs
+  append 48.167 μs
+
+4. Results for the mediumArray
+  insert 140.584 μs
+  append 132.917 μs
+
+5. Results for the largeArray
+  insert 5.482083 ms
+  append 347.666 μs  
+
+  For the tinyArray and the smallArray, the doublerInsert function was about twice as fast than the doublerAppend function. As the size of the arrays increased to medium, large, and extraLarge, the doublerAppend function became exponentially faster. For the extraLargeArray, the append function only took 3.2 ms while the insert function took 697 ms. The scale for append is linear and a better approach with bigger arrays. 
+
+  EXTRA CREDIT
+
+  The doublerInsert function is slower because the number of operations the computer has to do for the larger array is more than the doublerAppend function. Each time an item is added to the front of the array, the position of all of the previous items must be shifted. This is much more work for the computer. On the other hand, when an item is added to the end of the array, there is only one change happening at the end of the array. 
